@@ -61,6 +61,12 @@
 将Board Selection --> Custom Board Configuration --> Custom board name 修改为 stm32f4  
 将Board Selection --> Custom Board Configuration --> Custom board directory 修改为 configs/stm32f4  
 开始编译：  
-`make`
+`make`  
+* 2.nuttx基本功能开启  
+`make menuconfig`  
+** 1.定制输出文件  
+如果不需要生成.hex文件  
+Build Setup --> Binary Output Formats中将Intel HEX binary format取消选中即可  
+
 
 
