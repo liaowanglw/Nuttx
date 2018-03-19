@@ -46,13 +46,25 @@
 在Nuttx/nuttx/config目录下新建目录stm32f4  
 将Nuttx/nuttx/config/stm32f4discovery中的src、include、scripts、nsh复制到stm32f4目录下  
 scripts目录下只保留ld.scripts和Make.defs  
-src目录下Makefile修改为：    
+src目录下  
+Makefile修改为：    
 `-include $(TOPDIR)/Make.defs`  
 `ASRCS =`  
 `CSRCS = stm32_boot.c`  
-`include $(TOPDIR)/configs/Board.mk`    
+`include $(TOPDIR)/configs/Board.mk`  
+stm32_boot.c修改为：  
+`#include <stdio.h>`  
+`#include "stm32.h"`  
+`int board_app_initialize(uintptr_t arg)`  
+`{`  
+	`return OK;`  
+`}`  
+`void stm32_boardinitialize(void)`  
+`{`  
+
+`}`  
 更改主板信息：  
-打开/Nuttx/nuttx/configs/stm32f4/scripts中的make.defs文件  
+打开/Nuttx/nuttx/configs/stm32f4/scripts中的make.defs文件  
 将`ARCHSCRIPT = -T$(TOPDIR)/configs/$(CONFIG_ARCH_BOARD)/scripts/$(LDSCRIPT)`  
 改为：  
 `ARCHSCRIPT = -T$(TOPDIR)/configs/$(CONFIG_ARCH_BOARD_CUSTOM_NAME)/scripts/$(LDSCRIPT)`  
