@@ -1,5 +1,5 @@
 # Nuttx
-## 一、环境搭建  
+## 一、Linux下环境搭建  
 ### 1.代码下载  
 创建Nuttx文件夹:  
 `mkdir Nuttx`
@@ -41,9 +41,9 @@
 编译成功则会在Nuttx/nuttx目录下生成nuttx、nuttx.bin文件  
 ---  
 ## 二、系统移植  
-* 1.创建自己的板卡配置，以stm32f407为例  
-在Nuttx/nuttx/config目录下新建目录stm32f4  
-将Nuttx/nuttx/config/stm32f4discovery中的src、include、scripts、nsh复制到stm32f4目录下  
+### 1.创建自己的板卡配置，以stm32f407为例  
+在Nuttx/nuttx/config目录下新建目录stm32f4  
+将Nuttx/nuttx/config/stm32f4discovery中的src、include、scripts、nsh复制到stm32f4目录下  
 更改主板信息：  
 打开/Nuttx/nuttx/configs/stm32f4/scripts中的make.defs文件  
 将`ARCHSCRIPT = -T$(TOPDIR)/configs/$(CONFIG_ARCH_BOARD)/scripts/$(LDSCRIPT)`  
