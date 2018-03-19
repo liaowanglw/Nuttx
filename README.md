@@ -32,12 +32,13 @@
 `./configure.sh stm32f4discovery/nsh`  
 `cd ..`  
 进入配置界面：  
-`make menuconfig`  
-将Build Setup --> Build Host Platform由Windows改为Linux  
-保存退出  
+`make menuconfig`  
+将Build Setup --> Build Host Platform由Windows改为Linux  
+保存退出  
 进行编译：  
 `make oldconfig`  
 `make`  
 编译成功则会在Nuttx/nuttx目录下生成nuttx、nuttx.bin文件  
----
-## 二、
+---  
+## 二、系统移植  
+
