@@ -97,6 +97,16 @@ ROTS Features --> Clocks and Timers将系统时间力度改为1000：
 Device Drivers 取消选中  
 \[ \]Disable driver poll interfaces  
 \[ \]Enable /dev/null  
+* 7.关闭文件系统  
+File Systems 取消选中  
+\[ \]PROCFS File System  
+* 8.开启数学库支持  
+Library Routines 选中  
+\[\*\]Standard Math library  
+* 9.打开板级回调函数  
+Application Configuration --> NSH Library 选中  
+\[\*\]Have architecture-specific initializetion  
+
 
 
 
