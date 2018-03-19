@@ -13,7 +13,7 @@
 `git clone https://bitbucket.org/nuttx/pascal.git Pascal`（nuttx提供的pascal脚本解析器）  
 `git clone https://bitbucket.org/nuttx/uclibc.git uClibc++`（nuttx提供的c++ stl库）  
 ### 2.安装ARM Toolchain   
-`apt-git install gcc-arm-none-eabi`  
+`apt-get install gcc-arm-none-eabi`  
 切换路径  
 `cd <Desktop>/Nuttx/tools/kconfig-frontends`  
 编译kconfig-frontends  
@@ -46,8 +46,15 @@
 在Nuttx/nuttx/config目录下新建目录stm32f4  
 将Nuttx/nuttx/config/stm32f4discovery中的src、include、scripts、nsh复制到stm32f4目录下  
 scripts目录下只保留ld.scripts和Make.defs  
-更改主板信息：  
-打开/Nuttx/nuttx/configs/stm32f4/scripts中的make.defs文件  
+src目录下Makefile修改为：  
+``
+-include $(TOPDIR)/Make.defs  
+ASRCS =  
+CSRCS = stm32_boot.c  
+include $(TOPDIR)/configs/Board.mk  
+``  
+更改主板信息：  
+打开/Nuttx/nuttx/configs/stm32f4/scripts中的make.defs文件  
 将`ARCHSCRIPT = -T$(TOPDIR)/configs/$(CONFIG_ARCH_BOARD)/scripts/$(LDSCRIPT)`  
 改为：  
 `ARCHSCRIPT = -T$(TOPDIR)/configs/$(CONFIG_ARCH_BOARD_CUSTOM_NAME)/scripts/$(LDSCRIPT)`  
