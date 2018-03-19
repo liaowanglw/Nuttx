@@ -57,12 +57,10 @@
 `make oldconfig`  --应用配置  
 更改源码的定位：  
 `make menuconfig`  
-将Board Selection --> Select target board(STMicro STM32F4-Discovery board) 修改为 Custom development board  
+将Board Selection --> Select target board(STMicro STM32F4-Discovery board) 修改为 Custom development board  
 将Board Selection --> Custom Board Configuration --> Custom board name 修改为 stm32f4  
-将Board Selection --> Custom Board Configuration --> Custom board directory 修改为 configs/stm32f4  
-开始编译：  
-`make`  
-
-
+将Board Selection --> Custom Board Configuration --> Custom board directory 修改为 configs/stm32f4  
+开始编译：  
+`make`
 
 
