@@ -2,7 +2,6 @@
 ## 一、代码下载
 * 1.创建Nuttx文件夹:  
 ` mkdir Nuttx`
-
 通过git仓库下载核心组件：  
 `git clone https://bitbucket.org/nuttx/nuttx.git nuttx`（下载操作系统内核源码）  
 `git clone https://bitbucket.org/nuttx/apps.git apps`（下载操作系统builtin app）  
