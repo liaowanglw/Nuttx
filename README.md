@@ -7,7 +7,6 @@
 `git clone https://bitbucket.org/nuttx/nuttx.git nuttx`（下载操作系统内核源码）  
 `git clone https://bitbucket.org/nuttx/apps.git apps`（下载操作系统builtin app）  
 `git clone https://bitbucket.org/nuttx/tools.git tools`（nuttx的一些工具）  
-
 其他可选组件：
 `git clone https://bitbucket.org/nuttx/buildroot.git buildroot`（nuttx提供的build工具）  
 `git clone https://bitbucket.org/nuttx/nxwidgets.git NxWidgets`(nuttx提供的图形化界面)  
