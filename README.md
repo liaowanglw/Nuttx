@@ -1,6 +1,7 @@
 # Nuttx
-## 一、代码下载
-* 1.创建Nuttx文件夹:  
+## 一、环境搭建  
+* 1.代码下载  
+创建Nuttx文件夹:  
 `mkdir Nuttx`
 通过git仓库下载核心组件：  
 `git clone https://bitbucket.org/nuttx/nuttx.git nuttx`（下载操作系统内核源码）  
@@ -11,6 +12,5 @@
 `git clone https://bitbucket.org/nuttx/nxwidgets.git NxWidgets`（nuttx提供的图形化界面）  
 `git clone https://bitbucket.org/nuttx/pascal.git Pascal`（nuttx提供的pascal脚本解析器）  
 `git clone https://bitbucket.org/nuttx/uclibc.git uClibc++`（nuttx提供的c++ stl库）  
----
 * 2.安装ARM Toolchain  
 `apt-git install gcc-arm-none-eabi`
