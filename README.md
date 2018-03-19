@@ -21,7 +21,7 @@
 `make`  
 `make install`  
 打开文件 /etc/ld.so.conf  
-最后一行添加：  
+最后一行添加：    
 `include /usr/local/lib`  
 终端执行：  
 `ldconfig`  
