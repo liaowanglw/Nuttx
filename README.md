@@ -68,7 +68,7 @@ scripts目录下只保留ld.scripts和Make.defs
 `make menuconfig`  
 * 1.定制输出文件  
 如果不需要生成.hex文件  
-Build Setup --> Binary Output Formats中将\[\]Intel HEX binary format取消选中即可  
+Build Setup --> Binary Output Formats中将\[ \]Intel HEX binary format取消选中即可  
 * 2.打开调试信息  
 Build Setup --> Debug Options中选中：  
 \[\*\]Enable Debug Features  
@@ -86,10 +86,13 @@ System Type中选中：
 `ENTRY(__start)`  
 `EXTERN(_vectors)`  
 * 4.关闭未使用的功能和系统总线  
-System --> STM32 Peripheral Support  
+System --> STM32 Peripheral Support  
 只保留\[\*\]USART2  
-
-
+* 5.修改ROTS Features  
+ROTS Features  
+取消选中\[ \]Disable Nuttx interfaces  
+ROTS Features --> Clocks and Timers将系统时间力度改为1000：  
+(1000)System timer tick period(microseconds)  
 
 
 
