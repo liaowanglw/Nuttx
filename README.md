@@ -43,8 +43,8 @@
 ---    
 ## 二、系统移植   
 ### 1.创建自己的板卡配置，以stm32f407为例   
-在Nuttx/nuttx/config目录下新建目录stm32f4  
-将Nuttx/nuttx/config/stm32f4discovery中的src、include、scripts、nsh复制到stm32f4目录下  
+在Nuttx/nuttx/config目录下新建目录stm32f4  
+将Nuttx/nuttx/config/stm32f4discovery中的src、include、scripts、nsh复制到stm32f4目录下  
 scripts目录下只保留ld.scripts和Make.defs  
 更改主板信息：  
 打开/Nuttx/nuttx/configs/stm32f4/scripts中的make.defs文件  
