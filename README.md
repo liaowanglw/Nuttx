@@ -88,11 +88,17 @@ System Type中选中：
 * 4.关闭未使用的功能和系统总线  
 System --> STM32 Peripheral Support  
 只保留\[\*\]USART2  
-* 5.修改ROTS Features  
-ROTS Features  
-取消选中\[ \]Disable Nuttx interfaces  
-ROTS Features --> Clocks and Timers将系统时间力度改为1000：  
+* 5.修改ROTS Features  
+ROTS Features 取消选中  
+\[ \]Disable Nuttx interfaces  
+ROTS Features --> Clocks and Timers将系统时间力度改为1000：  
 (1000)System timer tick period(microseconds)  
+* 6.修改Device Drivers  
+Device Drivers 取消选中  
+\[ \]Disable driver poll interfaces  
+\[ \]Enable /dev/null  
+
+
 
 
 
