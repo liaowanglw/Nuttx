@@ -39,7 +39,8 @@
 `make oldconfig`  
 `make`  
 编译成功则会在Nuttx/nuttx目录下生成nuttx、nuttx.bin文件  
----  
+
+---    
 ## 二、系统移植  
 ### 1.创建自己的板卡配置，以stm32f407为例  
 在Nuttx/nuttx/config目录下新建目录stm32f4  
