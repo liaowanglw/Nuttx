@@ -1,6 +1,6 @@
-# Nuttx
-## 一、Linux下环境搭建  
-### 1.代码下载  
+# Nuttx #
+## 一、Linux下环境搭建 ##  
+### 1.代码下载 ###  
 创建Nuttx文件夹:  
 `mkdir Nuttx`
 通过git仓库下载核心组件：  
@@ -12,7 +12,7 @@
 `git clone https://bitbucket.org/nuttx/nxwidgets.git NxWidgets`（nuttx提供的图形化界面）  
 `git clone https://bitbucket.org/nuttx/pascal.git Pascal`（nuttx提供的pascal脚本解析器）  
 `git clone https://bitbucket.org/nuttx/uclibc.git uClibc++`（nuttx提供的c++ stl库）  
-### 2.安装ARM Toolchain  
+### 2.安装ARM Toolchain ###  
 `apt-git install gcc-arm-none-eabi`  
 切换路径  
 `cd <Desktop>/Nuttx/tools/kconfig-frontends`  
@@ -26,7 +26,7 @@
 终端执行：  
 `ldconfig`  
 至此配置工具已安装完毕，可以开始编译Nuttx系统了。  
-### 3.例：  
+### 3.例： ### 
 选择stm32f4discovery开发板bsp的nsh配置：  
 `cd <Desktop>/Nuttx/nuttx/tools`  
 `./configure.sh stm32f4discovery/nsh`  
@@ -41,8 +41,8 @@
 编译成功则会在Nuttx/nuttx目录下生成nuttx、nuttx.bin文件  
 
 ---    
-## 二、系统移植  
-### 1.创建自己的板卡配置，以stm32f407为例  
+## 二、系统移植 ##  
+### 1.创建自己的板卡配置，以stm32f407为例 ###  
 在Nuttx/nuttx/config目录下新建目录stm32f4  
 将Nuttx/nuttx/config/stm32f4discovery中的src、include、scripts、nsh复制到stm32f4目录下  
 更改主板信息：  
@@ -70,9 +70,9 @@
 Build Setup --> Binary Output Formats中将Intel HEX binary format取消选中即可  
 * 2.打开调试信息  
 Build Setup --> Debug Options中选中    
-Enable Debug Features  
-Enable Error Output  
-Enable Warnings Output  
+[*]Enable Debug Features  
+[*]Enable Error Output  
+[*]Enable Warnings Output  
 [*]Enable Informational Debug Output  
 
 
