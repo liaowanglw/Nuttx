@@ -47,7 +47,7 @@
 将Nuttx/nuttx/config/stm32f4discovery中的src、include、scripts、nsh复制到stm32f4目录下  
 scripts目录下只保留ld.scripts和Make.defs  
 src目录下Makefile修改为：  
-``
+``  
 -include $(TOPDIR)/Make.defs  
 ASRCS =  
 CSRCS = stm32_boot.c  
