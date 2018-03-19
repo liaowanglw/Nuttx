@@ -69,13 +69,13 @@
 如果不需要生成.hex文件  
 Build Setup --> Binary Output Formats中将\[\]Intel HEX binary format取消选中即可  
 * 2.打开调试信息  
-Build Setup --> Debug Options中选中：  
+Build Setup --> Debug Options中选中：  
 \[\*\]Enable Debug Features  
 \[\*\]Enable Error Output  
 \[\*\]Enable Warnings Output  
 \[\*\]Enable Informational Debug Output  
 * 3.开启浮点运算单元  
-System Type中选中：  
+System Type中选中：  
 \[\*\]Use BASEPRI Register  
 \[\*\]Use common ARMv7-M vectors  
 \[\*\]FPU support  
