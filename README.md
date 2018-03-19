@@ -45,7 +45,8 @@
 ### 1.创建自己的板卡配置，以stm32f407为例   
 在Nuttx/nuttx/config目录下新建目录stm32f4  
 将Nuttx/nuttx/config/stm32f4discovery中的src、include、scripts、nsh复制到stm32f4目录下  
-更改主板信息：  
+scripts目录下只保留ld.scripts和Make.defs  
+更改主板信息：  
 打开/Nuttx/nuttx/configs/stm32f4/scripts中的make.defs文件  
 将`ARCHSCRIPT = -T$(TOPDIR)/configs/$(CONFIG_ARCH_BOARD)/scripts/$(LDSCRIPT)`  
 改为：  
@@ -78,9 +79,9 @@ Build Setup --> Debug Options中选中：
 System Type中选中：  
 \[\*\]Use BASEPRI Register  
 \[\*\]Use common ARMv7-M vectors  
-\[\*\]FPU support  
-修改Nuttx/nuttx/configs/stm32f4/scripts目录下的ld.script  
-将`ENTRY(_stext)`  
+\[\*\]FPU support  
+修改Nuttx/nuttx/configs/stm32f4/scripts目录下的ld.script  
+将`ENTRY(_stext)`  
 改为：  
 `ENTRY(__start)`  
 `EXTERN(_vectors)`  
