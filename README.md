@@ -78,7 +78,13 @@ Build Setup --> Debug Options中选中：
 System Type中选中：  
 \[\*\]Use BASEPRI Register  
 \[\*\]Use common ARMv7-M vectors  
-\[\*\]FPU support  
+\[\*\]FPU support  
+修改Nuttx/nuttx/configs/stm32f4/scripts目录下的ld.script  
+将`ENTRY(_stext)`  
+改为：  
+`ENTRY(__start)`  
+`EXTERN(_vectors)`  
+* 4.
 
 
 
