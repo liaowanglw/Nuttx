@@ -85,7 +85,11 @@ System Type中选中：
 改为：  
 `ENTRY(__start)`  
 `EXTERN(_vectors)`  
-* 4.
+* 4.关闭未使用的功能和系统总线  
+System --> STM32 Peripheral Support  
+只保留\[\*\]USART2  
+
+
 
 
 
