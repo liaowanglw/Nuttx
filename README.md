@@ -1,6 +1,6 @@
 # Nuttx
-## 一、环境搭建  
-* 1.代码下载  
+## 一、环境搭建  
+### 1.代码下载  
 创建Nuttx文件夹:  
 `mkdir Nuttx`
 通过git仓库下载核心组件：  
@@ -11,9 +11,9 @@
 `git clone https://bitbucket.org/nuttx/buildroot.git buildroot`（nuttx提供的build工具）  
 `git clone https://bitbucket.org/nuttx/nxwidgets.git NxWidgets`（nuttx提供的图形化界面）  
 `git clone https://bitbucket.org/nuttx/pascal.git Pascal`（nuttx提供的pascal脚本解析器）  
-`git clone https://bitbucket.org/nuttx/uclibc.git uClibc++`（nuttx提供的c++ stl库）  
-* 2.安装ARM Toolchain  
-`apt-git install gcc-arm-none-eabi`  
+`git clone https://bitbucket.org/nuttx/uclibc.git uClibc++`（nuttx提供的c++ stl库）  
+### 2.安装ARM Toolchain  
+`apt-git install gcc-arm-none-eabi`  
 切换路径  
 `cd <Desktop>/Nuttx/tools/kconfig-frontends`  
 编译kconfig-frontends  
@@ -26,7 +26,7 @@
 终端执行：  
 `ldconfig`  
 至此配置工具已安装完毕，可以开始编译Nuttx系统了。  
-* 3.例： 
+### 3.例： 
 选择stm32f4discovery开发板bsp的nsh配置：  
 `cd <Desktop>/Nuttx/nuttx/tools`  
 `./configure.sh stm32f4discovery/nsh`  
@@ -61,11 +61,11 @@
 将Board Selection --> Custom Board Configuration --> Custom board name 修改为 stm32f4  
 将Board Selection --> Custom Board Configuration --> Custom board directory 修改为 configs/stm32f4  
 开始编译：  
-`make`  
-* 2.nuttx基本功能开启  
-`make menuconfig`  
-** 1.定制输出文件  
-如果不需要生成.hex文件  
+`make`  
+### 2.nuttx基本功能开启  
+`make menuconfig`  
+* 1.定制输出文件  
+如果不需要生成.hex文件  
 Build Setup --> Binary Output Formats中将Intel HEX binary format取消选中即可  
 
 
