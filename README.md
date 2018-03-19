@@ -8,7 +8,7 @@
 `git clone https://bitbucket.org/nuttx/tools.git tools`（nuttx的一些工具）  
 其他可选组件：  
 `git clone https://bitbucket.org/nuttx/buildroot.git buildroot`（nuttx提供的build工具）    
-`git clone https://bitbucket.org/nuttx/nxwidgets.git NxWidgets`(nuttx提供的图形化界面)    
-`git clone https://bitbucket.org/nuttx/pascal.git Pascal`（nuttx提供的pascal脚本解析器)  
+`git clone https://bitbucket.org/nuttx/nxwidgets.git NxWidgets`（nuttx提供的图形化界面）  
+`git clone https://bitbucket.org/nuttx/pascal.git Pascal`（nuttx提供的pascal脚本解析器）  
 `git clone https://bitbucket.org/nuttx/uclibc.git uClibc++`（nuttx提供的c++ stl库）  
 ---
