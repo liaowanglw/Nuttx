@@ -70,10 +70,10 @@
 Build Setup --> Binary Output Formats中将Intel HEX binary format取消选中即可  
 * 2.打开调试信息  
 Build Setup --> Debug Options中选中    
-[*]Enable Debug Features  
-[*]Enable Error Output  
-[*]Enable Warnings Output  
-[*]Enable Informational Debug Output  
+\[*]Enable Debug Features  
+\[*]Enable Error Output  
+\[*]Enable Warnings Output  
+\[*]Enable Informational Debug Output  
 
 
 
