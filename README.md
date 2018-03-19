@@ -13,7 +13,7 @@
 `git clone https://bitbucket.org/nuttx/pascal.git Pascal`（nuttx提供的pascal脚本解析器）  
 `git clone https://bitbucket.org/nuttx/uclibc.git uClibc++`（nuttx提供的c++ stl库）  
 * 2.安装ARM Toolchain  
-`apt-git install gcc-arm-none-eabi`
+`apt-git install gcc-arm-none-eabi`  
 切换路径  
 `cd <Desktop>/Nuttx/tools/kconfig-frontends`  
 编译kconfig-frontends  
