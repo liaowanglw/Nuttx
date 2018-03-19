@@ -42,14 +42,14 @@
 ---  
 ## 二、系统移植  
 * 1.创建自己的板卡配置，以stm32f407为例  
-在Nuttx/nuttx/config目录下新建目录stm32f4  
-将Nuttx/nuttx/config/stm32f4discovery中的src、include、scripts、nsh复制到stm32f4目录下  
-更改主板信息：  
-打开/Nuttx/nuttx/configs/stm32f4/scripts中的make.defs文件  
-将`ARCHSCRIPT = -T$(TOPDIR)/configs/$(CONFIG_ARCH_BOARD)/scripts/$(LDSCRIPT)`  
+在Nuttx/nuttx/config目录下新建目录stm32f4  
+将Nuttx/nuttx/config/stm32f4discovery中的src、include、scripts、nsh复制到stm32f4目录下  
+更改主板信息：  
+打开/Nuttx/nuttx/configs/stm32f4/scripts中的make.defs文件  
+将`ARCHSCRIPT = -T$(TOPDIR)/configs/$(CONFIG_ARCH_BOARD)/scripts/$(LDSCRIPT)`  
 改为：  
-`ARCHSCRIPT = -T$(TOPDIR)/configs/$(CONFIG_ARCH_BOARD_CUSTOM_NAME)/scripts/$(LDSCRIPT)`  
-切换到nuttx目录下  
+`ARCHSCRIPT = -T$(TOPDIR)/configs/$(CONFIG_ARCH_BOARD_CUSTOM_NAME)/scripts/$(LDSCRIPT)`  
+切换到nuttx目录下  
 `make distclean`  --彻底清除nuttx当前的板级配置  
 `cd tools`  
 `./configure.sh stm32f4/nsh` --加载自己的创建的板卡  
