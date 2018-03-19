@@ -67,13 +67,14 @@
 `make menuconfig`  
 * 1.定制输出文件  
 如果不需要生成.hex文件  
-Build Setup --> Binary Output Formats中将Intel HEX binary format取消选中即可  
+Build Setup --> Binary Output Formats中将\[\]Intel HEX binary format取消选中即可  
 * 2.打开调试信息  
-Build Setup --> Debug Options中选中    
+Build Setup --> Debug Options中选中  
 \[\*\]Enable Debug Features  
 \[\*\]Enable Error Output  
-\[\*\]Enable Warnings Output  
-\[\*\]Enable Informational Debug Output  
+\[\*\]Enable Warnings Output  
+\[\*\]Enable Informational Debug Output  
+
 
 
 
