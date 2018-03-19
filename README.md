@@ -37,7 +37,7 @@
 保存退出  
 进行编译：  
 `make oldconfig`  
-`make`  
+`make`  
 编译成功则会在Nuttx/nuttx目录下生成nuttx、nuttx.bin文件  
 ---
 ## 二、
