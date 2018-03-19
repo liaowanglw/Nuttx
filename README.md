@@ -25,8 +25,8 @@
 `include /usr/local/lib`  
 终端执行：  
 `ldconfig`  
-至此配置工具已安装完毕，可以开始编译Nuttx系统了。  
-例：  
+至此配置工具已安装完毕，可以开始编译Nuttx系统了。  
+例：  
 选择stm32f4discovery开发板bsp的nsh配置：  
 `cd <Desktop>/Nuttx/nuttx/tools`  
 `./configure.sh stm32f4discovery/nsh`  
