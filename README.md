@@ -103,7 +103,7 @@ System Type中选中：
 `ENTRY(__start)`  
 `EXTERN(_vectors)`  
 * 4.关闭未使用的功能和系统总线  
-System --> STM32 Peripheral Support  
+System Type--> STM32 Peripheral Support  
 只保留\[\*\]USART2  
 * 5.修改ROTS Features  
 ROTS Features 取消选中  
